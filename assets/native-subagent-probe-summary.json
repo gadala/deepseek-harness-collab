@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_historical_capability_summary",
+  "observedOn": "2026-10-05",
+  "version": "0.1.5-rc.2",
+  "profile": "headless",
+  "rawTranscriptsIncluded": false,
+  "currentEnvironmentVerified": false,
+  "observations": {
+    "foregroundOneShot": "historically_observed",
+    "backgroundContinuable": "historically_observed",
+    "listDescendants": "historically_observed",
+    "sendFollowupToSameChild": "historically_observed",
+    "settlementNotification": "historically_observed"
+  },
+  "limitations": [
+    "Initial trial produced duplicate children and conflicting tool instructions.",
+    "A later constrained trial completed two child turns without those anomalies.",
+    "Historical observations do not guarantee exactly-once delivery, sandbox isolation or model inheritance.",
+    "Paths, process identifiers, session identifiers and raw transcripts are not redistributed."
+  ],
+  "unverified": [
+    "concurrent_multi_member_load",
+    "cross_process_resume",
+    "cold_resume",
+    "cancellation",
+    "shutdown",
+    "desktop_binding"
+  ]
+}
