@@ -53,14 +53,14 @@ $skillsRoot = if ($env:CODEX_HOME) {
     Join-Path $HOME '.codex/skills'
 }
 New-Item -ItemType Directory -Force -Path $skillsRoot | Out-Null
-git clone <REPOSITORY_URL> (Join-Path $skillsRoot 'deepseek-harness-collab')
+git clone https://github.com/gadala/deepseek-harness-collab.git (Join-Path $skillsRoot 'deepseek-harness-collab')
 ```
 
 ### macOS / Linux
 
 ```sh
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone <REPOSITORY_URL> "${CODEX_HOME:-$HOME/.codex}/skills/deepseek-harness-collab"
+git clone https://github.com/gadala/deepseek-harness-collab.git "${CODEX_HOME:-$HOME/.codex}/skills/deepseek-harness-collab"
 ```
 
 如界面未刷新，重新打开或创建 Codex 会话。路径发现与 Windows 发行包说明不等于跨平台 Harness 已验证支持；辅助脚本的测试与真实模型能力验证应分开看待。
